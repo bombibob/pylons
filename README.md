@@ -31,11 +31,13 @@ Your Node Name
 Port prefix
 
 194
-# Clone project repository
+**Clone project repository**
+```
 cd && rm -rf pylons
 git clone https://github.com/Pylons-tech/pylons.git
 cd pylons
 git checkout v1.1.4
+```
 
 # Build binary
 make install
