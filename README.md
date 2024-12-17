@@ -39,8 +39,10 @@ cd pylons
 git checkout v1.1.4
 ```
 
-# Build binary
+**Build binary**
+```
 make install
+```
 
 # Prepare cosmovisor directories
 mkdir -p $HOME/.pylons/cosmovisor/genesis/bin
