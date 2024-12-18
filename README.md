@@ -44,9 +44,11 @@ git checkout v1.1.4
 make install
 ```
 
-# Prepare cosmovisor directories
+**Prepare cosmovisor directories**
+```
 mkdir -p $HOME/.pylons/cosmovisor/genesis/bin
 ln -s $HOME/.pylons/cosmovisor/genesis $HOME/.pylons/cosmovisor/current -f
+```
 
 # Copy binary to cosmovisor directory
 cp $(which pylonsd) $HOME/.pylons/cosmovisor/genesis/bin
