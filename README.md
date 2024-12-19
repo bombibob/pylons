@@ -50,8 +50,10 @@ mkdir -p $HOME/.pylons/cosmovisor/genesis/bin
 ln -s $HOME/.pylons/cosmovisor/genesis $HOME/.pylons/cosmovisor/current -f
 ```
 
-# Copy binary to cosmovisor directory
+**Copy binary to cosmovisor directory**
+```
 cp $(which pylonsd) $HOME/.pylons/cosmovisor/genesis/bin
+```
 
 # Set node CLI configuration
 pylonsd config chain-id pylons-mainnet-1
