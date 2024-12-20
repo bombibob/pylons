@@ -55,10 +55,12 @@ ln -s $HOME/.pylons/cosmovisor/genesis $HOME/.pylons/cosmovisor/current -f
 cp $(which pylonsd) $HOME/.pylons/cosmovisor/genesis/bin
 ```
 
-# Set node CLI configuration
+**Set node CLI configuration**
+```
 pylonsd config chain-id pylons-mainnet-1
 pylonsd config keyring-backend file
 pylonsd config node tcp://localhost:19457
+```
 
 # Initialize the node
 pylonsd init "Your Node Name" --chain-id pylons-mainnet-1
