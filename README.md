@@ -62,8 +62,10 @@ pylonsd config keyring-backend file
 pylonsd config node tcp://localhost:19457
 ```
 
-# Initialize the node
+**Initialize the node**
+```
 pylonsd init "Your Node Name" --chain-id pylons-mainnet-1
+```
 
 # Download genesis and addrbook files
 curl -L https://snapshots.nodejumper.io/pylons/genesis.json > $HOME/.pylons/config/genesis.json
