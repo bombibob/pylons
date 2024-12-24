@@ -78,8 +78,10 @@ curl -L https://snapshots.nodejumper.io/pylons/addrbook.json > $HOME/.pylons/con
 sed -i -e 's|^seeds *=.*|seeds = "0d25c5db4cbdc4171c8272278040db774011c268@5.161.229.9:26656,e9e64412c3d43de4f2e5f7a3e9289b4190e4ed78@88.198.32.17:33656,030e6a01aef8913bcee33b957e9204986203bc81@135.125.4.73:46656"|' $HOME/.pylons/config/config.toml
 ```
 
-# Set minimum gas price
+**Set minimum gas price**
+```
 sed -i -e 's|^minimum-gas-prices *=.*|minimum-gas-prices = "0.0025ubedrock"|' $HOME/.pylons/config/app.toml
+```
 
 # Set pruning
 sed -i \
