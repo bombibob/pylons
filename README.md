@@ -83,13 +83,14 @@ sed -i -e 's|^seeds *=.*|seeds = "0d25c5db4cbdc4171c8272278040db774011c268@5.161
 sed -i -e 's|^minimum-gas-prices *=.*|minimum-gas-prices = "0.0025ubedrock"|' $HOME/.pylons/config/app.toml
 ```
 
-# Set pruning
+**Set pruning**
+```
 sed -i \
   -e 's|^pruning *=.*|pruning = "custom"|' \
   -e 's|^pruning-keep-recent *=.*|pruning-keep-recent = "100"|' \
   -e 's|^pruning-interval *=.*|pruning-interval = "17"|' \
   $HOME/.pylons/config/app.toml
-
+```
 # Enable prometheus
 sed -i -e 's|^prometheus *=.*|prometheus = true|' $HOME/.pylons/config/config.toml
 
