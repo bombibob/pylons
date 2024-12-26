@@ -91,8 +91,10 @@ sed -i \
   -e 's|^pruning-interval *=.*|pruning-interval = "17"|' \
   $HOME/.pylons/config/app.toml
 ```
-# Enable prometheus
+**Enable prometheus**
+```
 sed -i -e 's|^prometheus *=.*|prometheus = true|' $HOME/.pylons/config/config.toml
+```
 
 # Change ports
 sed -i -e "s%:1317%:19417%; s%:8080%:19480%; s%:9090%:19490%; s%:9091%:19491%; s%:8545%:19445%; s%:8546%:19446%; s%:6065%:19465%" $HOME/.pylons/config/app.toml
