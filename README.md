@@ -102,8 +102,10 @@ sed -i -e "s%:1317%:19417%; s%:8080%:19480%; s%:9090%:19490%; s%:9091%:19491%; s
 sed -i -e "s%:26658%:19458%; s%:26657%:19457%; s%:6060%:19460%; s%:26656%:19456%; s%:26660%:19461%" $HOME/.pylons/config/config.toml
 ```
 
-# Download latest chain data snapshot
+**Download latest chain data snapshot**
+```
 curl "https://snapshots.nodejumper.io/pylons/pylons_latest.tar.lz4" | lz4 -dc - | tar -xf - -C "$HOME/.pylons"
+```
 
 # Install Cosmovisor
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.7.0
