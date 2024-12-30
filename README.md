@@ -112,7 +112,8 @@ curl "https://snapshots.nodejumper.io/pylons/pylons_latest.tar.lz4" | lz4 -dc - 
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.7.0
 ```
 
-# Create a service
+**Create a service**
+```
 sudo tee /etc/systemd/system/pylons.service > /dev/null << EOF
 [Unit]
 Description=Pylons node service
@@ -133,6 +134,7 @@ WantedBy=multi-user.target
 EOF
 sudo systemctl daemon-reload
 sudo systemctl enable pylons.service
+```
 
 # Start the service and check the logs
 sudo systemctl start pylons.service
