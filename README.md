@@ -23,14 +23,6 @@ echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.profile
 source .profile
 ```
 
-Node Installation
-
-Node Name
-
-Your Node Name
-Port prefix
-
-194
 **Clone project repository**
 ```
 cd && rm -rf pylons
@@ -153,10 +145,11 @@ ssh-keygen -t rsa
 cat ~/.ssh/id_rsa.pub
 ```
 
-# upgrade system packages
+**upgrade system packages**
+```
 sudo apt update
 sudo apt upgrade -y
-
+```
 # add new admin user
 sudo adduser admin --disabled-password -q
 
