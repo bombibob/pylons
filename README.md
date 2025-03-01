@@ -1,4 +1,4 @@
-Hardware Requirements
+**Hardware Requirements**
 
 Minimum
 
@@ -124,6 +124,9 @@ Environment="DAEMON_ALLOW_DOWNLOAD_BINARIES=true"
 [Install]
 WantedBy=multi-user.target
 EOF
+```
+
+```
 sudo systemctl daemon-reload
 sudo systemctl enable pylons.service
 ```
