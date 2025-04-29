@@ -1,8 +1,10 @@
 **Hardware Requirements**
 
 Minimum
-
+```
 4CPU 8RAM 160GB
+```
+
 Recommended
 
 8CPU 16RAM 500GB
